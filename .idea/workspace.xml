@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad9703fa-b8a0-4c0a-8363-535352932dbf" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CSV_Parser_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Entry Level Coding Challenge Page 2-bad.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Entry Level Coding Challenge Page 2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entry Level Coding Challenge Page 2.db" beforeDir="false" afterPath="$PROJECT_DIR$/Entry Level Coding Challenge Page 2.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CSVParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSVParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/~$try Level Coding Challenge.docx" beforeDir="false" />
-    </list>
+    <list default="true" id="ad9703fa-b8a0-4c0a-8363-535352932dbf" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,8 +15,8 @@
       <file leaf-file-name="CSVParser.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CSVParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+            <state relative-caret-position="-136">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#565#573#0" expanded="true" />
@@ -53,7 +44,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="1595" />
     <option name="height" value="1417" />
@@ -231,8 +222,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CSVParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        <state relative-caret-position="-136">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#565#573#0" expanded="true" />
@@ -246,7 +237,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>CSV Parser:jar</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -259,7 +250,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -294,7 +285,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>CSV Parser</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
