@@ -9,7 +9,12 @@ public class CSVParser {
 
     public static void main(String[] args) {
         CSVParser parser = new CSVParser();
-        String path = "Data/Entry Level Coding Challenge Page 2.csv";
+
+        //read input from console
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter file path: ");
+        String path = scanner.nextLine();
+
         parser.readFile(path);
     }
 
@@ -40,8 +45,8 @@ public class CSVParser {
             int noRecord = 0, noRecordGood = 0, noRecordBad = 0;
 
             //create log file
-            BufferedWriter log = new BufferedWriter(new FileWriter(new File("Data/"+file_name+".log")));
-            BufferedWriter bw = new BufferedWriter(new FileWriter(new File("Data/"+file_name+"-bad.csv")));
+            BufferedWriter log = new BufferedWriter(new FileWriter(new File(file_name+".log")));
+            BufferedWriter bw = new BufferedWriter(new FileWriter(new File(file_name+"-bad.csv")));
 
             //establish database connection
             Class.forName("org.sqlite.JDBC");
@@ -79,7 +84,9 @@ public class CSVParser {
                     ps.addBatch();
 
                     if ( (noRecordGood%MAX_INSERT_TRANSACTION)==0) {
+                        System.out.println("MAX INSERT TRANSACTION REACHED");
                         int[] updateCounts = ps.executeBatch();
+                        System.out.println(checkUpdateCounts(updateCounts));
                         c.commit();
                     }
                 } else {
@@ -89,6 +96,7 @@ public class CSVParser {
 
             }
             int[] updateCounts = ps.executeBatch();
+            System.out.println(checkUpdateCounts(updateCounts));
             c.commit();
 
             log.write("# of records received: " + noRecord+"\n");
@@ -108,5 +116,15 @@ public class CSVParser {
             System.err.println( e.getClass().getName() + ": " + e.getMessage() );
             System.exit(0);
         }
+    }
+
+    private String checkUpdateCounts(int[] updateCounts) {
+        int success = 0;
+        for (int i=0; i<updateCounts.length; i++) {
+            if (updateCounts[i]>=0)
+                success++;
+        }
+
+        return "# of commands processed successfully: "+success;
     }
 }
